@@ -8,7 +8,15 @@ import java.util.Scanner;
 public class SumAveInt4 {
   static public void main(String args[]) {
     Scanner sc = new Scanner(System.in);
+    double totalNumbers = 0;
 
+    for (int i = 0; i < 4; i++) {
+      System.out.print("数値" + (i + 1) + ": ");
+      totalNumbers += sc.nextInt();
+    }
+
+    System.out.println("\n合計: " + (int)totalNumbers);
+    System.out.println("平均: " + totalNumbers / 4);
     sc.close();
   }
 }

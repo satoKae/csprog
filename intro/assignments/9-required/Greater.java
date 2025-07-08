@@ -9,6 +9,13 @@ public class Greater {
   static public void main(String args[]) {
     Scanner sc = new Scanner(System.in);
 
+    System.out.print("数値1: ");
+    double input1 = sc.nextDouble();
+    System.out.print("数値2: ");
+    double input2 = sc.nextDouble();
+
+    System.out.println(Math.max(input1, input2));
+
     sc.close();
   }
 }
